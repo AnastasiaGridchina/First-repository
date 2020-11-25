@@ -44,9 +44,13 @@ footer.footer
                     div.footer__imput
                         p Получайте специальные предложения и новости сервиса
                         div.container__input
-                            form
-                                i.fas.fa-arrow-right
-                                input(type="text", name="Email" placeholder="Email")
+                            div.form__container
+                                form(action="#")
+                                    div.email__input
+                                        input(type="email" name="email" id="email" placeholder="Email")
+                                        i.material-icons.icon arrow_forward
+
+
     div.footer__bottom
         div.bottom__container
             div.footer__flex

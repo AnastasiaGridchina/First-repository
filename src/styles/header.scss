@@ -1,23 +1,29 @@
 @font-face {
     font-family: 'Monserrat';
-    src: url('../fonts/montserrat/montserrat.svg') format('truetype');
+    src: url('../../fonts/montserrat/montserrat.svg') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Monserrat';
-    src: url('../fonts/montserrat/montserrat.ttf') format('truetype');
+    src: url('../../fonts/montserrat/montserrat.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Monserrat';
-    src: url('../fonts/montserrat/montserrat.woff') format('truetype');
+    src: url('../../fonts/montserrat/montserrat.woff') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+$white: #FFFFFF;
+$boxshadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+$textcolor: rgba(31, 32, 65, 0.5);
+
+
 
 body {
     margin: 0;
@@ -45,10 +51,10 @@ li {
 .header {
     margin-top: 62px;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: $white;
     left: 0;
     top: 0;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow:$boxshadow;
 
 }
 
@@ -87,7 +93,7 @@ li {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $textcolor;
 }
 
 .header__link-active {
@@ -121,7 +127,7 @@ li {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color:$white;
     border-radius: 22px;
     padding: 8px 20px;
     border: solid 2px transparent;
@@ -139,7 +145,7 @@ li {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $textcolor;
     padding-left: 0px;
 }
 
@@ -158,7 +164,7 @@ li {
     font-weight: normal;
     font-size: 12px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $textcolor;
     display: inline-block;
     padding: 3px 5px;
     background-color: #BC9CFF;
@@ -171,7 +177,7 @@ li {
 .arrow {
     width: 0;
     height: 0;
-    border-top: 7px solid rgba(31, 32, 65, 0.5);
+    border-top: 7px solid $textcolor;
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
     display: inline-block;
@@ -192,7 +198,7 @@ li {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $textcolor;
 }
 
 /*HEADER-TOP*/
@@ -200,16 +206,16 @@ li {
 .header__second {
     margin-top: 40px;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color:$white;
     left: 0;
     top: 0;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: $boxshadow;
 }
 
 /*FOOTER*/
 .footer {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    background:$white;
+    box-shadow: $boxshadow;
     margin-top: 40px;
 }
 
@@ -248,7 +254,7 @@ li {
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        color: rgba(31, 32, 65, 0.5);
+        color: $textcolor;
     }
 
     h1 {
@@ -301,25 +307,47 @@ li {
 
 /*INPUT*/
 
-input[type="text"] {
-    width: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
-    padding-left: 15px;
+.container__input {
+
+   
     box-sizing: border-box;
-    width: 260px;
-    height: 44px;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.25);
 }
 
-.container__input::before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f061';
-    position: absolute;
-    font-size: 24px;
-    color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+.form__container {
+    position: relative;
+    display: flex;
+
+    form {
+        display: inline-flex;
+        flex-direction: column;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 12px 5px 8px 5px;
+        
+
+        input {
+            border: none;
+            padding: 5px;
+            outline: 0;
+            color: rgba(31, 32, 65, 0.25);
+            
+        }
+
+        .email__input {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-self: center;
+            
+        }
+
+        .icon {
+            color:#bc9cff;
+        }
+    }
 }
 
 
@@ -330,7 +358,7 @@ input[type="text"] {
     border-top: 0.5px solid rgba(31, 32, 65, 0.25);
     border-bottom: none;
     margin-top: 100px;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
 
 
     p {
@@ -372,11 +400,13 @@ input[type="text"] {
 
 .footer__mob {
     margin: 0 auto;
+
 }
 
 .footer__block {
     margin-top: 40px;
     margin-bottom: 140px;
+
 }
 
 .footer__wrapper {
@@ -384,12 +414,13 @@ input[type="text"] {
     box-sizing: border-box;
     padding: 120px 104px;
     margin: 0 auto;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    background:$white;
+    box-shadow: $boxshadow;
+
 }
 
 .footer__main {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -399,7 +430,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .social {
