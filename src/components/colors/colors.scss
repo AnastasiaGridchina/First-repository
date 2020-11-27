@@ -1,11 +1,119 @@
-body {
-    height: 100%;
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../../fonts/QuicksandRegular/Quicksand.svg') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.square {
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../../fonts/QuicksandRegular/Quicksand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../../fonts/QuicksandRegular/Quicksand.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin square ($background) {
     width: 70px;
     height: 70px;
-    background: #1F2041;
+    background: $background;
     border-radius: 6px;
 }
 
+.item__image1 {
+    @include square(#1F2041);
+    flex: 0 0 70px;
+}
+
+.item__image2 {
+    @include square(rgba(31, 32, 65, 0.75));
+    flex: 0 0 70px;
+}
+
+.item__image3 {
+    @include square(rgba(31, 32, 65, 0.5));
+    flex: 0 0 70px;
+}
+
+.item__image4 {
+    @include square(rgba(31, 32, 65, 0.25));
+    flex: 0 0 70px;
+}
+
+.item__image5 {
+    @include square(rgba(31, 32, 65, 0.05));
+    flex: 0 0 70px;
+}
+
+.item__image6 {
+    @include square(#BC9CFF);
+    flex: 0 0 70px;
+}
+
+.item__image7 {
+    @include square(#6FCF97);
+    flex: 0 0 70px;
+}
+
+.body {
+    font-family: "Quicksand", sans-serif;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+.container {
+    max-width: 1099.26px;
+    margin: 0 auto;
+}
+
+.columns__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns__column {
+    flex: 0 1 30%;
+    margin-bottom: 20px;
+}
+
+.item__row {
+    display: flex;
+}
+
+
+.item__body {
+    flex: 1 1 auto;
+    padding-left: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1F2041;
+}
+
+.item__subtitle {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1F2041;
+}
