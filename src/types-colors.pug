@@ -8,10 +8,12 @@ html(lang="en")
         link(rel="stylesheet" href="components/null-function.scss")
         link(rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css")
         link(rel="stylesheet" href="components/colors/colors.scss")
+        link(rel="stylesheet" href="components/fonts.scss")
+
     body
         div.wrapper
-            div.columns 
-                div.container
+            div.container
+                div.columns 
                     div.columns__row
                         div.columns__column
                             div.columns__item.item
@@ -62,4 +64,28 @@ html(lang="en")
                                     div.item__body
                                         div.item__title Green
                                         div.item__subtitle #6FCF97
-                        
+                    div.columns__row2
+                        div.columns__column-2
+                            div.columns__item.item
+                                div.item__row
+                                    div.item__name1 H1
+                                    div.item__body
+                                        div.item__text1 This one is the sub-section or widget title
+                        div.columns__column-2
+                            div.columns__item.item
+                                div.item__row
+                                    div.item__name2 H2
+                                    div.item__body
+                                        div.item__text2 Next one is the item title inside widgets
+                        div.columns__column-2
+                            div.columns__item.item
+                                div.item__row
+                                    div.item__name3 H3
+                                    div.item__body
+                                        div.item__text3 This is a label or CTA text
+                        div.columns__column-2
+                            div.columns__item.item
+                                div.item__row
+                                    div.item__name4 Body
+                                    div.item__body
+                                        div.item__text4 This is the body text which is used for most of the design, like paragraphs, lists, etc.
