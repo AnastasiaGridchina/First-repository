@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        title Form Elements
+        link(rel="stylesheet" href="components/null-function.scss")
+        link(rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css")
+        link(rel="stylesheet" href="components/form-elements/form-elements.scss")
+        link(rel="stylesheet" href="components/fonts.scss")
+        script(src="https://code.jquery.com/jquery-3.5.1.min.js")
+    body
+        div.wrapper
+            include components/form-elements/inputs/simple-input/input-default.pug
+            include components/form-elements/inputs/simple-input/input-hover.pug
+            include components/form-elements/inputs/counterGuest/dropdown-guest.pug
+                script(src="components/form-elements/inputs/counterGuest/guest-dropdown.js")

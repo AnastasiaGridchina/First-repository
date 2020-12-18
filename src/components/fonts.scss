@@ -18,23 +18,82 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*BOLD*/
 @font-face {
-    font-family: 'Monserrat';
+    font-family: 'Quicksand';
+    src: url('../../fonts/quicksand-bold/Quicksand-Bold.svg') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../fonts/quicksand-bold/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../fonts/quicksand-bold/Quicksand-Bold.woff') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/**/
+
+@font-face {
+    font-family: 'Montserrat';
     src: url('../../fonts/montserrat/montserrat.svg') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Monserrat';
+    font-family: 'Montserrat';
     src: url('../../fonts/montserrat/montserrat.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Monserrat';
+    font-family: 'Montserrat';
     src: url('../../fonts/montserrat/montserrat.woff') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+/*BOLD*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-bold/Montserrat-Bold.svg') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-bold/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/montserrat-bold/Montserrat-Bold.woff') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url('../../fonts/iconfont/MaterialIcons-Regular.svg') format('svg'),
+      url('../../fonts/iconfont/MaterialIcons-Regular.woff') format('woff'),
+      url('../../fonts/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+  }

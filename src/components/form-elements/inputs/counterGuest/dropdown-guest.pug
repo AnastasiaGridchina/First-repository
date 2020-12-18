@@ -1,0 +1,31 @@
+div.guest__wrap
+        div.select.is-active
+            div.guest__text dropdown
+            div.select__header
+                span.select__current#js_result Сколько гостей
+                span.select__icon expand_more
+    
+            div.select__body
+                div.select__counter
+                    div.select__item.first Взрослые
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
+                div.select__counter
+                    div.select__item Дети
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
+                div.select__counter
+                    div.select__item.last Младенцы
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
+                div.select__buttons
+                    div.select__cancel очистить
+                    div.select__submit применить
+
+

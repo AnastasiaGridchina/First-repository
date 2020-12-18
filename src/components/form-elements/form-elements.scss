@@ -1,0 +1,16 @@
+//first input
+@import "inputs/simple-input/default-style.scss";
+@import "inputs/simple-input/hover-style.scss";
+@import "inputs/counterGuest/dropdown-guest-style.scss";
+
+
+body {
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
