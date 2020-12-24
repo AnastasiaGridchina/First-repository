@@ -14,5 +14,9 @@
   "devDependencies": {
     "pug": "^3.0.0",
     "sass": "^1.26.11"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.5",
+    "jquery": "^3.5.1"
   }
 }

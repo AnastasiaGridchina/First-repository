@@ -61,6 +61,8 @@ function num_word(value, words) {
     return words[2];
 }
 
+import $ from 'jquery'
+
 $('form input[type="number"]').change(function () {
     var count = 0;
     $('form input[type="number"]').each(function () {

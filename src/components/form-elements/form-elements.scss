@@ -2,11 +2,12 @@
 @import "inputs/simple-input/default-style.scss";
 @import "inputs/simple-input/hover-style.scss";
 @import "inputs/counterGuest/dropdown-guest-style.scss";
-
+@import "inputs/calendar-inputs/masked-style.scss";
+@import "inputs/calendar-inputs/date-dropdown/date-dropdown-empty-style.scss";
+@import "../../styles/mixins.scss";
 
 body {
     font-family: "Quicksand", sans-serif;
-    
 }
 
 
@@ -14,3 +15,4 @@ body {
     min-height: 100%;
     overflow: hidden;
 }
+

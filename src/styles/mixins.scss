@@ -1,0 +1,48 @@
+//colors
+
+
+//arrow for inputs and dropdown
+
+@mixin arrowDown {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 42px;
+    width: 42px;
+    margin-left: auto;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+//inputs for calendar/dropdown
+
+@mixin inputs {
+    border: none;
+    padding: 12.2px 15px;
+    padding-right: 0px;
+    outline: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+    width: 106px;
+}
+
+//title for page form and elements
+
+@mixin titleDropdown {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 5px;
+}
