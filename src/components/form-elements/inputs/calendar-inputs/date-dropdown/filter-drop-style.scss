@@ -1,0 +1,61 @@
+.select__filter {
+    width: 266px;
+    margin: 40px 141px;
+    position: relative;
+}
+
+.filter.is-active .filter__body {
+    display: block;
+}
+
+.filter__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding-bottom: 5px;
+}
+
+.filter__header {
+    display: flex;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter__current {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 9px;
+    padding-left: 15px;
+}
+
+.filter__icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.filter__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    display: none;
+    background-color: #FFFFFF;
+}

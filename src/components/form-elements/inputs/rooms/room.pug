@@ -1,0 +1,28 @@
+div.room__wrap
+        div.room.is-active
+            div.title
+                div.room__title dropdown
+                div.room__subtitle expanded
+            div.room__header
+                span.room__current#js_result 2 спальни, 2 кровати...
+                span.room__icon expand_more
+
+            div.room__body
+                div.room__counter
+                    div.room__item.first спальни
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
+                div.room__counter
+                    div.room__item кровати
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
+                div.room__counter
+                    div.room__item.last ванные комнаты
+                    div.counter
+                        button.counter__btn(data-direction="minus") -
+                        input.counter__value(type="text" value="0")
+                        button.counter__btn(data-direction="plus") +
