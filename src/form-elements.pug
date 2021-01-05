@@ -13,18 +13,26 @@ html(lang="en")
 
     body
         div.wrapper
-            include components/form-elements/inputs/simple-input/input-default.pug
-            include components/form-elements/inputs/simple-input/input-hover.pug
-            include components/form-elements/inputs/counterGuest/dropdown-guest.pug
-            script(src="components/form-elements/inputs/counterGuest/guest-dropdown.js")
-            include components/form-elements/inputs/calendar-inputs/masked.pug
-            script(src="components/form-elements/inputs/calendar-inputs/masked.js")
-            include components/form-elements/inputs/calendar-inputs/date-dropdown/date-dropdown-empty.pug
-            include components/form-elements/inputs/calendar-inputs/date-dropdown/filter-drop.pug
-            include components/form-elements/inputs/email/email-form.pug
-            include components/form-elements/inputs/rooms/room-def.pug
-            include components/form-elements/inputs/rooms/room.pug
-            script(src="components/form-elements/inputs/rooms/room.js") 
-            include components/form-elements/inputs/checkbox/box-list.pug
-            
-            
+            div.column__start
+                include components/form-elements/inputs/simple-input/input-default.pug
+                include components/form-elements/inputs/simple-input/input-hover.pug
+                include components/form-elements/inputs/counterGuest/dropdown-guest.pug
+                script(src="components/form-elements/inputs/counterGuest/guest-dropdown.js")
+                include components/form-elements/inputs/calendar-inputs/masked.pug
+                script(src="components/form-elements/inputs/calendar-inputs/masked.js")
+                include components/form-elements/inputs/calendar-inputs/date-dropdown/date-dropdown-empty.pug
+                include components/form-elements/inputs/calendar-inputs/date-dropdown/filter-drop.pug
+                include components/form-elements/inputs/email/email-form.pug
+                include components/form-elements/inputs/rooms/room-def.pug
+                include components/form-elements/inputs/rooms/room.pug
+                script(src="components/form-elements/inputs/rooms/room.js") 
+                include components/form-elements/inputs/checkbox/unactive/box-list-unactive.pug
+                include components/form-elements/inputs/checkbox/box-list.pug
+                script(src="components/form-elements/inputs/checkbox/box-list.js") 
+                include components/form-elements/benefits/benefits.pug
+            div.column__middle
+                include components/form-elements/inputs/checkbox/checkbox-buttons/checkbox-buttons.pug  
+                include components/form-elements/inputs/radiobuttons/radiobuttons.pug 
+                script(src="components/form-elements/inputs/radiobuttons/radiobuttons.js") 
+            div.column__end
+

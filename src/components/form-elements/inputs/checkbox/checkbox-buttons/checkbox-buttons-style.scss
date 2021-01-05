@@ -1,0 +1,37 @@
+.checkbox-buttons {
+    width: 222px;
+    margin-top: 143px;
+    margin-left: 126px;
+}
+
+.checkbox-buttons__current {
+    @include elementsTitle;
+    
+}
+
+.checkbox-buttons__item {
+    @include elementsItem;
+    padding-bottom: 10px;
+}
+
+
+.checkbox-buttons__body {
+    margin-top: 16.65px;
+    padding-left: 30px;
+
+    label {
+        margin-left: -30px;
+    }
+
+    input {
+        display: none;
+    }
+
+    label::before {
+        @include label-before;
+    }
+
+    input:checked+label::before {
+        @include checkboxIcon;
+    }
+}

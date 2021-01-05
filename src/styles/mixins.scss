@@ -46,3 +46,51 @@
     color: #1F2041;
     margin-bottom: 5px;
 }
+
+//checkbox elements
+
+
+@mixin elementsTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+//items
+@mixin elementsItem {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+//label for checkbox elements
+
+@mixin label-before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+//checked sign
+
+@mixin checkboxIcon {
+    border: 1px solid #BC9CFF;
+    text-align: center;
+    background-size: 100%;
+    content: "\e5ca";
+    font-family: 'Material Icons';
+    color: #BC9CFF;
+}

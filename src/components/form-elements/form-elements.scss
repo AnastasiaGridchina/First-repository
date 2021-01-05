@@ -9,6 +9,13 @@
 @import "inputs/rooms/room.scss";
 @import "inputs/rooms/room-def-style.scss";
 @import "inputs/checkbox/box-list-style.scss";
+@import "benefits/benefits.scss";
+@import "inputs/checkbox/checkbox-buttons/checkbox-buttons-style.scss";
+@import "inputs/radiobuttons/radiobuttons-style.scss";
+
+
+
+
 @import "../../styles/mixins.scss";
 
 body {
@@ -19,5 +26,18 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.column__start {
+    flex: 33%;
+}
+
+.column__middle {
+    flex: 33%;
+}
+
+.column__end {
+    flex: 33%;
+}
