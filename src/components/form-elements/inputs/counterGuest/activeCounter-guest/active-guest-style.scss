@@ -1,7 +1,7 @@
 //select//
-.select {
+.select-open{
     width: 320px;
-    margin: 19.46px 0px 19.46px 141px;
+    margin: 196px 0px 0px 126px;
     position: relative;
 }
 
@@ -100,6 +100,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
     border-radius: 22px;
     background-color: transparent;
     font-family: 'Montserrat';
@@ -110,6 +111,7 @@
     color: rgba(31, 32, 65, 0.5);
     margin-bottom: 7px;
     margin-right: 7px;
+    box-sizing: border-box;
     margin-top: 6px;
 }
 

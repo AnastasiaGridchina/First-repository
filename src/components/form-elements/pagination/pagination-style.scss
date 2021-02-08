@@ -1,0 +1,90 @@
+.pagination__wrapper {
+    margin-top: 40px;
+    margin-left: 171.26px;
+}
+
+.pagination__title {
+    @include elementsTitle;
+    margin-bottom: 16px;
+}
+
+.pagination__outline {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-top: 10.56px;
+}
+
+.pagination__arrow-next {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.pagination {
+    display: flex;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+#table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#pagination {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+#pagination li {
+    width: 40px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination li:hover,
+#pagination li.active {
+    cursor: pointer;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

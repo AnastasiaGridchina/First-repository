@@ -1,0 +1,46 @@
+.bulletList__conteiner {
+    width: 292px;
+    margin-top: 98.44px;
+    margin-left: 126px;
+}
+
+.bulletList__title {
+    @include titleDropdown;
+    margin-bottom: 16px;
+}
+
+.bulletList__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bulletList__block {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.block__circle {
+    width: 10.43px;
+    height: 10px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.block__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-left: 10.43px;
+    margin-bottom: 10px;
+}
+
+.lastElement:last-child{
+    margin-bottom: 0px;
+}

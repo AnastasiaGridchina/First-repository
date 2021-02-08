@@ -11,9 +11,10 @@ html(lang="en")
         link(rel="stylesheet" href="components/fonts.scss")
 
 
+
     body
         div.wrapper
-            div.column__start
+            div.column
                 include components/form-elements/inputs/simple-input/input-default.pug
                 include components/form-elements/inputs/simple-input/input-hover.pug
                 include components/form-elements/inputs/counterGuest/dropdown-guest.pug
@@ -30,9 +31,34 @@ html(lang="en")
                 include components/form-elements/inputs/checkbox/box-list.pug
                 script(src="components/form-elements/inputs/checkbox/box-list.js") 
                 include components/form-elements/benefits/benefits.pug
-            div.column__middle
+            div.column
                 include components/form-elements/inputs/checkbox/checkbox-buttons/checkbox-buttons.pug  
                 include components/form-elements/inputs/radiobuttons/radiobuttons.pug 
                 script(src="components/form-elements/inputs/radiobuttons/radiobuttons.js") 
-            div.column__end
+                include components/form-elements/inputs/radiobuttons/toggle-buttons/toggle-buttons.pug
+                script(src="components/form-elements/inputs/radiobuttons/toggle-buttons/toggle-buttons.js")
+                include components/form-elements/buttons/like-button/like-button.pug
+                script(src="components/form-elements/buttons/like-button/like-button.js")
+                include components/form-elements/inputs/radiobuttons/rate-stars/rate-stars.pug
+                include components/form-elements/inputs/counterGuest/activeCounter-guest/dropdown-guest-active.pug
+                include components/form-elements/inputs/checkbox/rich-checkbox-buttons/rich-checkbutton.pug
+                include components/form-elements/review/review-murad.pug 
+            div.column
+                include components/form-elements/slider/slider.pug
+                script(src="components/form-elements/slider/slider.js")
+                div.flex-row
+                    include components/form-elements/buttons/click-me-button/click-button-full.pug
+                    include components/form-elements/buttons/click-me-button/after-click-buttons/click-button-after.pug                         
+                div.flex-row
+                    include components/form-elements/buttons/click-me-button/frame-button/frame-button-before.pug
+                    include components/form-elements/buttons/click-me-button/after-click-buttons/frame-button-after.pug
+                div.flex-row
+                    include components/form-elements/buttons/click-me-button/simple-button-click/simple-button-before.pug
+                    include components/form-elements/buttons/click-me-button/after-click-buttons/simple-button-after.pug
+                include components/form-elements/buttons/pay-button/payment-button.pug
+                include components/form-elements/pagination/pagination.pug
+                script(src="components/form-elements/pagination/pagination.js")
+                include components/form-elements/inputs/counterGuest/activeDropdownRight/dropdown-guest-right.pug
+                script(src="components/form-elements/inputs/counterGuest/activeDropdownRight/dropdown-guest-right.js")
+                include components/form-elements/bulletList/bulletList.pug
 

@@ -1,0 +1,83 @@
+.like-button__block {
+    margin-top: 40.44px;
+    margin-left: 126px;
+    width: 89.72px;
+}
+
+.like-button__title {
+    @include elementsTitle;
+    margin-bottom: 16px;
+}
+
+.like-button__heart.enabled {
+    display: none;
+}
+
+.like-button__btn {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+.like-button__wrapper{
+    display: inline-flex;
+}
+
+.like-button__heart {
+    width: 10px;
+    height: 10px;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 9px;
+    padding: 5px 8px 2px 4px;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.like-button__enable{
+    margin-right: 5px;
+}
+
+.like-button__able{
+    margin-left: 5px;
+}
+
+.like-button__counter {
+    width: 6px;
+    height: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(31, 32, 65, 0.25);
+    margin: 3px 12px 3px 10px;
+}
+
+
+
+.like-button__btn.active {
+    border: solid 1px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #bc9cff, #8ba4f9);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+
+    .like-button__heart {
+        display: none;
+    }
+
+    .like-button__heart.enabled {
+        display: block;
+        color: #BC9CFF;
+    }
+
+    .like-button__counter {
+        color: #BC9CFF;
+    }
+}

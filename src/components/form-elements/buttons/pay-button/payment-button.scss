@@ -1,0 +1,52 @@
+.wrapper__pay-button {
+    margin-top: 30px;
+    margin-left: 171.26px;
+}
+
+.pay-button {
+    display: flex;
+    cursor: pointer;
+}
+
+
+.pay-button__src {
+    width: 320px;
+    height: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 22px;
+    padding: 14px 21px 15px 19px;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-origin: border-box;
+
+    padding-right: 0;
+    color: #FFFFFF;
+}
+
+.pay-button__src:active {
+    background-image: linear-gradient(180deg, (rgba(188, 156, 255, .5)), (rgba(139, 164, 249, .5)));
+    transition: 0s;
+}
+
+
+
+
+.pay-button__icon {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: -34px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Material Icons';
+    color: #FFFFFF;
+
+}

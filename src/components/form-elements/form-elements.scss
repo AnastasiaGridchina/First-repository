@@ -12,7 +12,23 @@
 @import "benefits/benefits.scss";
 @import "inputs/checkbox/checkbox-buttons/checkbox-buttons-style.scss";
 @import "inputs/radiobuttons/radiobuttons-style.scss";
-
+@import "inputs/radiobuttons/toggle-buttons/toggle-style.scss";
+@import "buttons/like-button/like-style.scss";
+@import "inputs/radiobuttons/rate-stars/rate-stars-style.scss";
+@import "inputs/counterGuest/activeCounter-guest/active-guest-style.scss";
+@import "inputs/checkbox/rich-checkbox-buttons/rich-checkbutton-style.scss";
+@import "review/rewiew-murad-style.scss";
+@import "slider/slider-style.scss";
+@import "buttons/click-me-button/click-me-button-full.scss";
+@import "buttons/click-me-button/after-click-buttons/click-button-after.scss";
+@import "buttons/click-me-button/frame-button/frame-button-before-style.scss";
+@import "buttons/click-me-button/after-click-buttons/frame-button-after-style.scss";
+@import "buttons/click-me-button/simple-button-click/simple-button-before-style.scss";
+@import "buttons/click-me-button/after-click-buttons/simple-button-after-style.scss";
+@import "buttons/pay-button/payment-button.scss";
+@import "pagination/pagination-style.scss";
+@import "inputs/counterGuest/activeDropdownRight/dropdown-guest-right-style.scss";
+@import "bulletList/bulletList-style.scss";
 
 
 
@@ -24,20 +40,20 @@ body {
 
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin: 0;
+	padding: 0;
+	flex-direction: row;
 }
 
-.column__start {
-    flex: 33%;
+.column{
+    flex: 1 0;
+	width: 33%;
 }
 
-.column__middle {
-    flex: 33%;
-}
-
-.column__end {
-    flex: 33%;
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
 }

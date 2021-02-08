@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "inputmask": "^5.0.5",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "jquery-ui-bundle": "^1.12.1-migrate",
+    "pagination": "^0.4.6",
+    "paginationjs": "^2.1.5"
   }
 }

@@ -1,0 +1,62 @@
+.rich-buttons__wrapper {
+    max-width: 266px;
+    margin-top: 257.44px;
+    margin-left: 126px;
+}
+
+
+
+.rich-buttons__header {
+    @include elementsTitle;
+    margin-bottom: 16px;
+}
+
+.rich-buttons__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-bottom: 5px;
+}
+
+
+.rich-buttons__item__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    
+}
+
+.rich-buttons__block {
+    margin-bottom: 10px;
+}
+
+.rich-buttons__block:last-child {
+    margin-bottom: 0;
+}
+
+.rich-buttons__body {
+    margin-top: 16.65px;
+    padding-left: 30px;
+
+    label {
+        margin-left: -30px;
+    }
+
+    input {
+        display: none;
+    }
+
+    label::before {
+        @include label-before;
+    }
+
+    input:checked+label::before {
+        @include checkboxIcon;
+    }
+}

@@ -1,0 +1,108 @@
+.stars-rating__wrapper {
+    margin-top: 40px;
+    margin-left: 126px;
+}
+
+.stars-rating__title {
+    @include elementsTitle;
+    margin-bottom: 16px;
+}
+
+.stars-rating__block {
+    display: inline-block;
+    position: relative;
+
+    input {
+        /*display: none;*/
+    }
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+}
+
+
+.stars-rating__block::before {
+    display: block;
+    content: ' ★ ★ ★ ★ ★';
+    font-size: 24px;
+    line-height: 20px;
+    color: transparent;
+}
+
+.stars-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.stars-rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.stars-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.stars-rating__label::before {
+    content: '\e83a';
+    font-family: "Material Icons";
+    display: block;
+    transition: color 0.3s ease 0s;
+    font-size: 24px;
+    line-height: 20px;
+
+}
+
+.stars-rating__item:checked,
+.stars-rating__item:checked~.stars-rating__label {
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.stars-rating__label:hover,
+.stars-rating__label:hover~.stars-rating__label,
+.stars-rating__label:checked~.stars-rating__label:hover {
+
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+   
+}
+
+.stars-rating__item:checked ~ .stars-rating__label {
+    &::before {
+        content: '\e838';
+    }
+}
+
+.stars-form__item{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.stars-form__item:last-child {
+    margin-right: 0px;
+}

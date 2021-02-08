@@ -1,7 +1,79 @@
 //colors
 
 
-//arrow for inputs and dropdown
+
+
+
+
+ 
+//DROPDOWN STYLES START
+
+//current text field
+@mixin currentTextField{
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 9px;
+    padding-left: 15px;
+}
+
+//header 
+
+@mixin dropHeader{
+    display: flex;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+//button counter
+
+@mixin dropCounterBtn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 22px;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 7px;
+    margin-right: 7px;
+    margin-top: 6px;
+}
+
+
+//value for counter button
+
+@mixin valueOfCounter {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+
+//body
+
+@mixin dropBody {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    display: none;
+    background-color: #FFFFFF;
+}
+
+
+//icon-arrow for inputs and dropdown
 
 @mixin arrowDown {
     display: flex;
@@ -18,6 +90,22 @@
     color: rgba(31, 32, 65, 0.5);
 }
 
+// select items
+
+@mixin itemFromDropdown{
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding: 11px;
+    padding-left: 15px;
+}
+
+
 //inputs for calendar/dropdown
 
 @mixin inputs {
@@ -33,6 +121,55 @@
     color: rgba(31, 32, 65, 0.25);
     width: 106px;
 }
+
+
+//button submit
+
+@mixin btnSubmit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+
+    margin-right: 7px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+
+//button cancel
+
+@mixin btnCancel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    margin-left: 14px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+
+
+//DROPDOWN STYLES END
+
+
+
+
+
+
+
+
+
+
 
 //title for page form and elements
 
@@ -93,4 +230,5 @@
     content: "\e5ca";
     font-family: 'Material Icons';
     color: #BC9CFF;
+
 }

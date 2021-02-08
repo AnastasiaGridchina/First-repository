@@ -1,0 +1,58 @@
+.dropRight__wrapper{
+    margin-top: 230px;
+    margin-left: 72px;
+    width: 320px;
+}
+
+.dropRight__select.is-active.dropRight__body{
+    display: block;
+}
+
+.dropRight__select__header{
+    @include dropHeader;
+}
+
+.dropRight__current{
+    @include currentTextField;
+}
+
+.dropRight__icon{
+  @include arrowDown;  
+}
+
+.dropRight__body{
+    @include dropBody;
+}
+
+.dropRight__item{
+    @include itemFromDropdown;
+}
+
+.firstItem {
+    padding-top: 11.56px;
+}
+
+.dropRight__counter__select{
+    display: flex;
+}
+
+.dropRight__title{
+    @include titleDropdown;
+}
+
+.dropRight__counter{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.dropRight__counter__btn{
+    @include dropCounterBtn;
+}
+
+.dropRight__counter__value{
+    @include valueOfCounter;
+}
